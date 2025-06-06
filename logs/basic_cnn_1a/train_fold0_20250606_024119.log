@@ -1,0 +1,98 @@
+2025-06-06 02:41:19 | train_fold0 | INFO | Starting CIFAR-10 training script
+2025-06-06 02:41:19 | train_fold0 | INFO | Experiment name: basic_cnn_1a
+2025-06-06 02:41:19 | train_fold0 | INFO | Config file: configs/cnn/basic_cnn1.json
+2025-06-06 02:41:19 | train_fold0 | INFO | Fold: 0
+2025-06-06 02:41:19 | train_fold0 | INFO | ==================================================
+2025-06-06 02:41:19 | train_fold0 | INFO | Hyperparameters:
+2025-06-06 02:41:19 | train_fold0 | INFO | --------------------------------------------------
+2025-06-06 02:41:19 | train_fold0 | INFO | checkpoint: {'enabled': True, 'save_dir': 'weights/checkpoints'}
+2025-06-06 02:41:19 | train_fold0 | INFO | description: Basic CNN configuration for CIFAR-10 with Adam optimizer and StepLR scheduler
+2025-06-06 02:41:19 | train_fold0 | INFO | evaluation: {'eval_batch_size': 256, 'eval_data_dir': './data', 'metrics': ['accuracy']}
+2025-06-06 02:41:19 | train_fold0 | INFO | logging: {'log_interval': 50, 'save_best_only': True}
+2025-06-06 02:41:19 | train_fold0 | INFO | model: {'type': 'BasicCNN', 'num_classes': 10, 'conv1_channels': 32, 'conv2_channels': 64, 'kernel_size': 3, 'dropout': 0.25, 'fc_1_units': 256, 'fc_2_units': 128, 'input_shape': [3, 32, 32]}
+2025-06-06 02:41:19 | train_fold0 | INFO | model_save_dir: weights
+2025-06-06 02:41:19 | train_fold0 | INFO | optimizer: {'type': 'Adam', 'lr': 0.001, 'weight_decay': 0.0}
+2025-06-06 02:41:19 | train_fold0 | INFO | scheduler: {'enabled': True, 'type': 'StepLR', 'step_size': 7, 'gamma': 0.1}
+2025-06-06 02:41:19 | train_fold0 | INFO | seed: 42
+2025-06-06 02:41:19 | train_fold0 | INFO | training: {'batch_size': 256, 'num_epochs': 25, 'k_folds': 5, 'data_dir': './data', 'shuffle': True}
+2025-06-06 02:41:19 | train_fold0 | INFO | ==================================================
+2025-06-06 02:41:19 | train_fold0 | INFO | Starting training for fold 0
+2025-06-06 02:41:19 | train_fold0 | INFO | Using device: mps
+2025-06-06 02:41:19 | train_fold0 | INFO | ==================================================
+2025-06-06 02:41:19 | train_fold0 | INFO | Hyperparameters:
+2025-06-06 02:41:19 | train_fold0 | INFO | --------------------------------------------------
+2025-06-06 02:41:19 | train_fold0 | INFO | checkpoint: {'enabled': True, 'save_dir': 'weights/checkpoints'}
+2025-06-06 02:41:19 | train_fold0 | INFO | description: Basic CNN configuration for CIFAR-10 with Adam optimizer and StepLR scheduler
+2025-06-06 02:41:19 | train_fold0 | INFO | evaluation: {'eval_batch_size': 256, 'eval_data_dir': './data', 'metrics': ['accuracy']}
+2025-06-06 02:41:19 | train_fold0 | INFO | fold: 0
+2025-06-06 02:41:19 | train_fold0 | INFO | k_folds: 5
+2025-06-06 02:41:19 | train_fold0 | INFO | learning_rate: 0.001
+2025-06-06 02:41:19 | train_fold0 | INFO | logging: {'log_interval': 50, 'save_best_only': True}
+2025-06-06 02:41:19 | train_fold0 | INFO | model: {'type': 'BasicCNN', 'num_classes': 10, 'conv1_channels': 32, 'conv2_channels': 64, 'kernel_size': 3, 'dropout': 0.25, 'fc_1_units': 256, 'fc_2_units': 128, 'input_shape': [3, 32, 32]}
+2025-06-06 02:41:19 | train_fold0 | INFO | model_save_dir: weights
+2025-06-06 02:41:19 | train_fold0 | INFO | num_epochs: 25
+2025-06-06 02:41:19 | train_fold0 | INFO | optimizer: {'type': 'Adam', 'lr': 0.001, 'weight_decay': 0.0}
+2025-06-06 02:41:19 | train_fold0 | INFO | scheduler: {'enabled': True, 'type': 'StepLR', 'step_size': 7, 'gamma': 0.1}
+2025-06-06 02:41:19 | train_fold0 | INFO | seed: 42
+2025-06-06 02:41:19 | train_fold0 | INFO | training: {'batch_size': 256, 'num_epochs': 25, 'k_folds': 5, 'data_dir': './data', 'shuffle': True}
+2025-06-06 02:41:19 | train_fold0 | INFO | ==================================================
+2025-06-06 02:41:20 | train_fold0 | INFO | Train dataset size: 40000
+2025-06-06 02:41:20 | train_fold0 | INFO | Validation dataset size: 10000
+2025-06-06 02:41:20 | train_fold0 | INFO | Model: BasicCNN
+2025-06-06 02:41:20 | train_fold0 | INFO | Total parameters: 651978
+2025-06-06 02:41:50 | train_fold0 | INFO | Step 1 | Metrics: train_loss: 1.8510 | train_accuracy: 30.8400 | val_loss: 1.6147 | val_accuracy: 40.8600 | epoch_time: 30.1969
+2025-06-06 02:41:50 | train_fold0 | INFO | New best model saved at epoch 1 with validation accuracy: 40.86%
+2025-06-06 02:42:20 | train_fold0 | INFO | Step 2 | Metrics: train_loss: 1.5096 | train_accuracy: 44.6750 | val_loss: 1.3755 | val_accuracy: 49.5700 | epoch_time: 29.6649
+2025-06-06 02:42:20 | train_fold0 | INFO | New best model saved at epoch 2 with validation accuracy: 49.57%
+2025-06-06 02:42:50 | train_fold0 | INFO | Step 3 | Metrics: train_loss: 1.3629 | train_accuracy: 50.5975 | val_loss: 1.2433 | val_accuracy: 54.7300 | epoch_time: 29.6608
+2025-06-06 02:42:50 | train_fold0 | INFO | New best model saved at epoch 3 with validation accuracy: 54.73%
+2025-06-06 02:43:19 | train_fold0 | INFO | Step 4 | Metrics: train_loss: 1.2351 | train_accuracy: 55.5750 | val_loss: 1.1330 | val_accuracy: 58.9100 | epoch_time: 29.7003
+2025-06-06 02:43:19 | train_fold0 | INFO | New best model saved at epoch 4 with validation accuracy: 58.91%
+2025-06-06 02:43:49 | train_fold0 | INFO | Step 5 | Metrics: train_loss: 1.1340 | train_accuracy: 59.5175 | val_loss: 1.0501 | val_accuracy: 62.3300 | epoch_time: 30.0733
+2025-06-06 02:43:49 | train_fold0 | INFO | New best model saved at epoch 5 with validation accuracy: 62.33%
+2025-06-06 02:44:20 | train_fold0 | INFO | Step 6 | Metrics: train_loss: 1.0501 | train_accuracy: 62.8100 | val_loss: 0.9769 | val_accuracy: 65.0300 | epoch_time: 30.3360
+2025-06-06 02:44:20 | train_fold0 | INFO | New best model saved at epoch 6 with validation accuracy: 65.03%
+2025-06-06 02:44:49 | train_fold0 | INFO | Step 7 | Metrics: train_loss: 0.9878 | train_accuracy: 65.2900 | val_loss: 0.9267 | val_accuracy: 67.3800 | epoch_time: 29.6333
+2025-06-06 02:44:49 | train_fold0 | INFO | New best model saved at epoch 7 with validation accuracy: 67.38%
+2025-06-06 02:45:20 | train_fold0 | INFO | Step 8 | Metrics: train_loss: 0.9469 | train_accuracy: 66.7250 | val_loss: 0.9302 | val_accuracy: 67.3200 | epoch_time: 30.8359
+2025-06-06 02:45:51 | train_fold0 | INFO | Step 9 | Metrics: train_loss: 0.9054 | train_accuracy: 68.4625 | val_loss: 0.8488 | val_accuracy: 70.3600 | epoch_time: 30.9784
+2025-06-06 02:45:51 | train_fold0 | INFO | New best model saved at epoch 9 with validation accuracy: 70.36%
+2025-06-06 02:46:25 | train_fold0 | INFO | Step 10 | Metrics: train_loss: 0.8674 | train_accuracy: 69.4925 | val_loss: 0.8278 | val_accuracy: 71.0700 | epoch_time: 33.8506
+2025-06-06 02:46:25 | train_fold0 | INFO | New best model saved at epoch 10 with validation accuracy: 71.07%
+2025-06-06 02:46:55 | train_fold0 | INFO | Step 11 | Metrics: train_loss: 0.8433 | train_accuracy: 70.5650 | val_loss: 0.7728 | val_accuracy: 72.8300 | epoch_time: 29.9885
+2025-06-06 02:46:55 | train_fold0 | INFO | New best model saved at epoch 11 with validation accuracy: 72.83%
+2025-06-06 02:47:25 | train_fold0 | INFO | Step 12 | Metrics: train_loss: 0.7972 | train_accuracy: 72.3750 | val_loss: 0.7850 | val_accuracy: 72.3200 | epoch_time: 30.0590
+2025-06-06 02:47:59 | train_fold0 | INFO | Step 13 | Metrics: train_loss: 0.7882 | train_accuracy: 72.4225 | val_loss: 0.7543 | val_accuracy: 73.6500 | epoch_time: 33.9828
+2025-06-06 02:47:59 | train_fold0 | INFO | New best model saved at epoch 13 with validation accuracy: 73.65%
+2025-06-06 02:48:33 | train_fold0 | INFO | Step 14 | Metrics: train_loss: 0.7562 | train_accuracy: 73.5350 | val_loss: 0.7293 | val_accuracy: 74.2300 | epoch_time: 34.1083
+2025-06-06 02:48:33 | train_fold0 | INFO | New best model saved at epoch 14 with validation accuracy: 74.23%
+2025-06-06 02:49:06 | train_fold0 | INFO | Step 15 | Metrics: train_loss: 0.7390 | train_accuracy: 74.3675 | val_loss: 0.7224 | val_accuracy: 74.9500 | epoch_time: 32.5227
+2025-06-06 02:49:06 | train_fold0 | INFO | New best model saved at epoch 15 with validation accuracy: 74.95%
+2025-06-06 02:49:35 | train_fold0 | INFO | Step 16 | Metrics: train_loss: 0.7212 | train_accuracy: 74.9300 | val_loss: 0.7193 | val_accuracy: 74.7600 | epoch_time: 29.6426
+2025-06-06 02:50:05 | train_fold0 | INFO | Step 17 | Metrics: train_loss: 0.7010 | train_accuracy: 75.5800 | val_loss: 0.7034 | val_accuracy: 75.5700 | epoch_time: 29.8570
+2025-06-06 02:50:05 | train_fold0 | INFO | New best model saved at epoch 17 with validation accuracy: 75.57%
+2025-06-06 02:50:35 | train_fold0 | INFO | Step 18 | Metrics: train_loss: 0.6859 | train_accuracy: 76.3600 | val_loss: 0.7232 | val_accuracy: 75.0700 | epoch_time: 29.7258
+2025-06-06 02:51:05 | train_fold0 | INFO | Step 19 | Metrics: train_loss: 0.6733 | train_accuracy: 76.8100 | val_loss: 0.6955 | val_accuracy: 75.0500 | epoch_time: 29.8450
+2025-06-06 02:51:35 | train_fold0 | INFO | Step 20 | Metrics: train_loss: 0.6628 | train_accuracy: 76.8825 | val_loss: 0.6660 | val_accuracy: 76.9500 | epoch_time: 29.7681
+2025-06-06 02:51:35 | train_fold0 | INFO | New best model saved at epoch 20 with validation accuracy: 76.95%
+2025-06-06 02:52:04 | train_fold0 | INFO | Step 21 | Metrics: train_loss: 0.6504 | train_accuracy: 77.3450 | val_loss: 0.6669 | val_accuracy: 76.6500 | epoch_time: 29.6929
+2025-06-06 02:52:34 | train_fold0 | INFO | Step 22 | Metrics: train_loss: 0.6324 | train_accuracy: 78.1050 | val_loss: 0.6802 | val_accuracy: 76.0900 | epoch_time: 29.7672
+2025-06-06 02:53:04 | train_fold0 | INFO | Step 23 | Metrics: train_loss: 0.6206 | train_accuracy: 78.2825 | val_loss: 0.6482 | val_accuracy: 77.4300 | epoch_time: 29.8451
+2025-06-06 02:53:04 | train_fold0 | INFO | New best model saved at epoch 23 with validation accuracy: 77.43%
+2025-06-06 02:53:34 | train_fold0 | INFO | Step 24 | Metrics: train_loss: 0.6115 | train_accuracy: 79.0025 | val_loss: 0.6413 | val_accuracy: 77.9200 | epoch_time: 29.7673
+2025-06-06 02:53:34 | train_fold0 | INFO | New best model saved at epoch 24 with validation accuracy: 77.92%
+2025-06-06 02:54:04 | train_fold0 | INFO | Step 25 | Metrics: train_loss: 0.5931 | train_accuracy: 79.5650 | val_loss: 0.6309 | val_accuracy: 78.3800 | epoch_time: 29.7916
+2025-06-06 02:54:04 | train_fold0 | INFO | New best model saved at epoch 25 with validation accuracy: 78.38%
+2025-06-06 02:54:04 | train_fold0 | INFO | Training completed!
+2025-06-06 02:54:04 | train_fold0 | INFO | Best validation accuracy: 78.38% (epoch 25)
+2025-06-06 02:54:04 | train_fold0 | INFO | Best training accuracy: 79.56%
+2025-06-06 02:54:04 | train_fold0 | INFO | Total training time: 763.72 seconds
+2025-06-06 02:54:04 | train_fold0 | INFO | Model saved to: weights/basic_cnn_1a/model_fold0.pth
+2025-06-06 02:54:04 | train_fold0 | INFO | Training completed successfully
+2025-06-06 02:54:04 | train_fold0 | INFO | Final Results:
+2025-06-06 02:54:04 | train_fold0 | INFO | --------------------------------------------------
+2025-06-06 02:54:04 | train_fold0 | INFO | Best training accuracy: 79.56%
+2025-06-06 02:54:04 | train_fold0 | INFO | Best validation accuracy: 78.38%
+2025-06-06 02:54:04 | train_fold0 | INFO | Best epoch: 25
+2025-06-06 02:54:04 | train_fold0 | INFO | Total training time: 763.72 seconds
+2025-06-06 02:54:04 | train_fold0 | INFO | Model saved to: weights/basic_cnn_1a/model_fold0.pth
